@@ -4,24 +4,25 @@
 
 ------------------
 
-#### 新建用户 *jason*
+### 新建用户 *jason*
 
-`$ adduser`
+`$ adduser jason`  #新建用户 *jason*
 
-   > 和useradd不同，adduser会帮你建好主目录,设置密码等
+`$ usermod -G sudo jason` #把*jason*加入到*sudo*组里
+
+    和useradd不同，adduser会帮你建好主目录,设置密码等
     `$ deluser` 删除用户
-    `$ usermod -G sudo jason` 把jason加入到sudo组里
     */etc/passwd* 用户信息
     */etc/group* 组信息
 
-#### 优化ssh链接
+### 优化ssh链接
 
 1. Mac 终端防超时掉线
 
     每隔60秒给服务器发送一个心跳包
     在 *~/.ssh/config* 里加上
 
-   > ServerAliveInterval 60
+        ServerAliveInterval 60
 
 2. 免密登录
 
