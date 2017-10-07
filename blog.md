@@ -115,8 +115,11 @@ Tomcat安装比较简单，解压了就能用
     这边注意Java和Tomcat的版本
     像我一开始装的 jdk9 和 Tomcat8.5 就报错了
     于是把 jdk9 换成jdk8
+    或者装 Tomcat9
 
 配置Java环境变量
+
+`$ apt install `
 
 可以修改/etc/profile #系统环境变量
 
@@ -127,3 +130,18 @@ Tomcat安装比较简单，解压了就能用
     export JAVA_HOME="/usr/lib/jvm/openjdk/"
 
 
+#### 换上https
+
+使用 [Let's Encrypt](https://letsencrypt.org/)
+
+可以使用 [certbot](https://certbot.eff.org/) 工具快速换上https
+
+不需要手动生成密钥对，根据帮助直接配好，还能配置自动更新
+
+不过我遇到的一个问题是certbot找不到我的nginx，所以
+
+`$ sudo certbot --nginx`
+<br>
+`--nginx-server-root /home/jason/qsboy/nginx/conf/ `
+<br>
+`--nginx-ctl /home/jason/qsboy/nginx/sbin/nginx`
