@@ -12,7 +12,7 @@
     `$ deluser` 删除用户
     `$ usermod -G sudo jason` 把jason加入到sudo组里
     */etc/passwd* 用户信息
-    */etc/group* 组信息  
+    */etc/group* 组信息
 
 #### 优化ssh链接
 
