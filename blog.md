@@ -11,9 +11,9 @@
 `$ usermod -G sudo jason` #把*jason*加入到*sudo*组里
 
     和useradd不同，adduser会帮你建好主目录,设置密码等
-    `$ deluser` 删除用户
-    */etc/passwd* 用户信息
-    */etc/group* 组信息
+    `$ deluser`     删除用户
+    /etc/passwd    用户信息
+    /etc/group      组信息
 
 -----------------
 
@@ -136,7 +136,9 @@ Tomcat安装比较简单，解压了就能用
 
 可以使用 [certbot](https://certbot.eff.org/) 工具快速换上https
 
-不需要手动生成密钥对，根据帮助直接配好，还能配置自动更新
+不需要手动生成密钥对，根据帮助直接配好
+
+`$ sudo certbot renew --dry-run` #自动更新
 
 不过我遇到的一个问题是certbot找不到我的nginx，所以
 
@@ -145,3 +147,4 @@ Tomcat安装比较简单，解压了就能用
 `--nginx-server-root /home/jason/qsboy/nginx/conf/ `
 <br>
 `--nginx-ctl /home/jason/qsboy/nginx/sbin/nginx`
+
