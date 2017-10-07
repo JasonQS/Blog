@@ -10,10 +10,13 @@
 
 `$ usermod -G sudo jason` #把*jason*加入到*sudo*组里
 
-    和useradd不同，adduser会帮你建好主目录,设置密码等
-    `$ deluser`     删除用户
-    /etc/passwd    用户信息
-    /etc/group      组信息
+和useradd不同，adduser会帮你建好主目录,设置密码等
+
+`$ deluser` #删除用户
+
+*/etc/passwd* #用户信息
+
+*/etc/group* #组信息
 
 -----------------
 
@@ -117,9 +120,9 @@ Tomcat安装比较简单，解压了就能用
     于是把 jdk9 换成jdk8
     或者装 Tomcat9
 
-配置Java环境变量
+`$ apt install openjdk-8-jdk`
 
-`$ apt install `
+配置Java环境变量
 
 可以修改/etc/profile #系统环境变量
 
