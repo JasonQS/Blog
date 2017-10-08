@@ -2,7 +2,7 @@
 
 ### 快捷键
 
-说几个我常用的，其他可以自己查
+说几个我常用的，其他可以自己查 [support.apple.com](https://support.apple.com/zh-cn/ht201236)
 
 ⌘ Q 关闭整个程序
 
