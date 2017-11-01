@@ -145,9 +145,7 @@ Tomcat安装比较简单，解压了就能用
 
 不过我遇到的一个问题是certbot找不到我的nginx，所以
 
-`$ sudo certbot --nginx`
-<br>
-`--nginx-server-root /home/jason/qsboy/nginx/conf/ `
-<br>
-`--nginx-ctl /home/jason/qsboy/nginx/sbin/nginx`
+    `$ sudo certbot --nginx`
+    `--nginx-server-root /home/jason/qsboy/nginx/conf/ `
+    `--nginx-ctl /home/jason/qsboy/nginx/sbin/nginx`
 
