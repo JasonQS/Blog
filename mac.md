@@ -54,6 +54,7 @@ fn ⌫ 往右删除
 
 ⌘ ⇧ . 显示隐藏文件
 
+--------
 
 ### 给终端设置快捷键
 
@@ -61,6 +62,35 @@ Mac 本来没有设置打开Terminal的快捷键
 
 需要在 Automator 里新建一个服务，然后绑定快捷键，这里不展开
 
+后来发现神器 - `snap` 可像windows一样快捷打开docker上的东西 把terminal放上去就好
+
+--------
+
+### 给终端设置代理
+
+`vim .bashrc` 编辑bash配置文件，加上
+
+`alias proxy='export all_proxy=socks5://127.0.0.1:1080'`
+
+`alias unproxy='unset all_proxy'`
+
+`esc :wq` 保存退出
+
+`source .bashrc` 重新载入配置文件
+
+#### 测试
+
+`~$ curl ip.cn`
+
+`当前 IP：36.23.111.111 来自：浙江省 电信`
+
+`~$ proxy`
+
+`~$ curl ip.cn`
+
+`当前 IP：47.52.111.111 来自：香港特别行政区 阿里云`
+
+--------
 
 ### 输入法
 
@@ -72,7 +102,9 @@ Mac 本来没有设置打开Terminal的快捷键
 
 在 *AppleEnabledInputSources* 找到要删除的输入法，删除整个以数字命名的文件就好了
 
- - - - - -
+--------
+
+## 软件破解
 
 ### JetBrains系列编辑器破解
 
